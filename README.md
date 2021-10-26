@@ -1,4 +1,4 @@
-# formulaire
+# formulaire de connexion sécurisé
 C'est le code pour un formulaire de connexion et inscription  sécurisé en utilisant PHP 
 
 L'application : Formulaire d'inscription / connexion sécurisé. 
