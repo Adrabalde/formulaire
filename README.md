@@ -28,6 +28,7 @@ A 01 :
 - https - ssl 
 - Générer une clé nommée formulaire.com.key et un certificat nommé formulaire.com.crt 
 - vhost-ssl
+- php.ini : allow_url_fopen = off
 - Cacher les contenu des dossiers 
 .htaccess 
 Options -Indexes 
