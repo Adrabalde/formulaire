@@ -1,5 +1,5 @@
 <?php
-
+include_once('db/config.php');
 function filtrer_input($champ){
 
   return htmlspecialchars(stripcslashes(strip_tags($champ)));
@@ -8,6 +8,8 @@ function filtrer_input($champ){
   // stripcslashes : supprimer les "/"
   // strip_tags : éliminer les balises HTML 
 }
+if($_POST["nom"]){
+
 
 $nom = filtrer_input($_POST["nom"]);
 $prenom = filtrer_input($_POST["prenom"]);
@@ -15,9 +17,10 @@ $email = filtrer_input($_POST["email"]);
 $login = filtrer_input($_POST["login"]);
 $motdepasse = filtrer_input($_POST["password"]);
 
+
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = $login;
+$password = $pwd;
 $dbname = "formulaire";
 
 try {
@@ -33,7 +36,7 @@ try {
 } catch(PDOException $e) {
   echo $sql . "<br>" . $e->getMessage();
 }
-
+}
 $conn = null;
 
 ?>

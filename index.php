@@ -43,5 +43,6 @@ $_SESSION["token"] = bin2hex(random_bytes(32));
     <br>
   
     <?php 
-require "footer.html"
+require "footer.html";
+die()
 ?>
